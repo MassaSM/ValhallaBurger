@@ -87,8 +87,8 @@ a.navbar-brand {
 
 .nav-link {
     color: var(--color-text)!important;
-    padding-left: 35px!important;
-    padding-right: 35px!important;
+    padding-left: 25px!important;
+    padding-right: 25px!important;
 }
 
 .btn-white {
@@ -105,7 +105,7 @@ a.navbar-brand {
 }
 
 .btn-icon {
-    padding-right: 75px;
+    padding-right: 60px;
 }
 
 .btn-icon .icon {
@@ -192,6 +192,7 @@ a.navbar-brand {
     padding: 9px 15px!important;
     border-radius: 15px!important;
     font-size: 18px!important;
+    margin-bottom: 8px;
 }
 
 .btn-social {
@@ -211,7 +212,8 @@ a.navbar-brand {
 
 .img-banner img {
     position: absolute;
-    width: 570px;
+    width: 100%;
+    max-width: 570px;
     top: 30px;
     right: 15px;
 }
@@ -304,6 +306,7 @@ a.navbar-brand {
 
 .container-menu {
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .card-item {
@@ -1038,6 +1041,10 @@ section.header {
     object-fit: cover;
     filter: grayscale(100%);
     transition: .3s ease-in-out;
+}
+
+.navbar-toggler{
+    line-height: 1.9rem!important;
 }
 
 
