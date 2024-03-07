@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Valhalla - Burger and Beer</title>
+
+        <link rel="stylesheet" href="./assets/styles/bootstrap.min.css" />
+        <link rel="stylesheet" href="./assets/styles/fontawesome.css" />
+        <link rel="stylesheet" href="./assets/styles/animate.css" />
+        <link rel="stylesheet" href="./assets/styles/main.css" />
+        <link rel="stylesheet" href="./assets/styles/responsivo.css" />
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/images/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./assets/images/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./assets/images/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./assets/images/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./assets/images/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./assets/images/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./assets/images/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./assets/images/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./assets/images/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="./assets/images/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+
+    <body>
+
+        <div class="container-mensagens" id="container-mensagens">
+
+        </div>
+
+        <a class="botao-carrinho animated bounceIn hidden" onclick="cardapio.metodos.abrirCarrinho(true)">
+            <div class="badge-total-carrinho">0</div>
+            <i class="fa fa-shopping-bag"></i>
+        </a>
+
+        <section class="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg pl-0 pr-0 col-one">
+                    <a class="navbar-brand wow fadeIn" href="index.html">
+                        <img src="./assets/images/logo-header.png" width="160" class="img-logo" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+                        <span class="navbar-toggler-icon">
+                            <i class="fas fa-bars"></i>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto mr-auto wow fadeIn">
+                            <li class="nav-item">
+                                <a href="index.html#reservas" class="nav-link"><b>Reservas</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="index.html#servicos" class="nav-link"><b>Serviços</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="index.html#cardapio" class="nav-link"><b>Cardápio</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="historia.html" class="nav-link"><b>História</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="galeria.html" class="nav-link"><b>Galeria</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="index.html#depoimentos" class="nav-link"><b>Depoimentos</b></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+        <section class="history">
+            <div class="video">
+                <video autoplay loop playsinline muted>			
+                    <source src="./video/tempestade.mp4" type='video/mp4'>
+                </video>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content__historia">
+                            <div class="title__intern">
+                                <h1>História</h1>
+                            </div>
+                            <div class="img__historia">
+                                <img src="./assets/images/viking-historia.webp">
+                            </div>                            
+                        </div>
+                        
+                        <div class="about">
+                            <h2>Sobre a Valhalla Burger and Beer</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Pharetra diam sit amet nisl. Facilisi nullam vehicula ipsum a arcu. Ut ornare lectus sit amet est placerat in egestas. Varius sit amet mattis vulputate enim nulla aliquet porttitor lacus. Commodo ullamcorper a lacus vestibulum. Porta lorem mollis aliquam ut. Sed libero enim sed faucibus turpis in eu mi bibendum. Neque laoreet suspendisse interdum consectetur libero id faucibus. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna. Cras pulvinar mattis nunc sed blandit libero. Arcu cursus vitae congue mauris rhoncus aenean vel. Amet est placerat in egestas. Quis blandit turpis cursus in hac habitasse platea. Risus in hendrerit gravida rutrum quisque non tellus. Interdum velit laoreet id donec ultrices tincidunt arcu. Risus in hendrerit gravida rutrum quisque non tellus orci ac.</p>
+
+                            <p>Ut sem viverra aliquet eget sit amet tellus cras adipiscing. Amet justo donec enim diam vulputate ut pharetra sit amet. Pharetra pharetra massa massa ultricies mi quis hendrerit. Vitae justo eget magna fermentum iaculis eu non. Lobortis scelerisque fermentum dui faucibus in ornare. Sodales ut etiam sit amet. Et tortor consequat id porta. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Faucibus purus in massa tempor nec. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce. Ultricies mi eget mauris pharetra.</p>                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-vikings">
+                <img src="/assets/images/viking-01.jpg">
+                <img src="/assets/images/viking-02.jpg">
+                <img src="/assets/images/viking-03.jpg">
+                <img src="/assets/images/viking-04.jpg">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content__historia burger">
+                            <div class="title__intern">
+                                <h2>Burguers</h2>
+                            </div>
+                        </div>
+                        
+                        <div class="about">
+                            <h2>Sobre nossos Burgers</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna etiam tempor orci eu lobortis. Pharetra diam sit amet nisl. Facilisi nullam vehicula ipsum a arcu. Ut ornare lectus sit amet est placerat in egestas. </p>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="burgeers">
+            <div class="container">
+                <div class="container__burger">
+                    <div class="img__burger">
+                        <img src="./assets/images/cardapio/burguers/athelstan.jpg">
+                    </div>
+                    <div class="content__burger">
+                        <p>Athelstan</p>
+                        <p>Athelstan (nórdico antigo: Aðalsteinn ; que significa &quot;pedra nobre&quot;) é um jovem monge cristão anglo-saxão levado como escravo por Ragnar Lothbrok do Mosteiro de Lindisfarne . Ele está dividido entre as crenças vikings e cristãs, e se torna conselheiro e amigo tanto de Ragnar quanto do rei Ecbert .</p>
+                    </div>
+                </div>
+
+                <div class="container__burger">
+                    <div class="img__burger">
+                        <img src="./assets/images/cardapio/burguers/balder.jpg">
+                    </div>
+                    <div class="content__burger">
+                        <p>Balder</p>
+                        <p>Balder ou Baldur (em nórdico antigo: Balðr), também citado como Baeldaeg (n. 243) em algumas fontes históricas,[1] é uma divindade da mitologia nórdica. É relacionado com a justiça e a sabedoria, e todos os deuses o louvam pela sua beleza.</p>
+                    </div>
+                </div>
+
+                <div class="container__burger">
+                    <div class="img__burger">
+                        <img src="./assets/images/cardapio/burguers/bispo-heahmund.jpg">
+                    </div>
+                    <div class="content__burger">
+                        <p>Bispo Heahmund </p>
+                        <p>O Grande Guerreiro De Cristo, Heahmund é baseado em uma figura da vida real da história e da Era Viking. Heahmund era o bispo de Sherborne, que defendia sua igreja com unhas e dentes, e que lutou contra a invasão viking e acabou por ser canonizado</p>
+                    </div>
+                </div>
+
+                <div class="container__burger">
+                    <div class="img__burger">
+                        <img src="./assets/images/cardapio/burguers/bjorn-hironside.jpg">
+                    </div>
+                    <div class="content__burger">
+                        <p>Bjorn Ironside</p>
+                        <p>Björn , também conhecido como Bjorn Ironside , é o Rei de Kattegat . Ele é filho de Ragnar Lothbrok e Lagertha e o mais velho dos muitos filhos de Ragnar.</p>
+                    </div>
+                </div>
+
+                <div class="container__burger">
+                    <div class="img__burger">
+                        <img src="./assets/images/cardapio/burguers/floki.jpg">
+                    </div>
+                    <div class="content__burger">
+                        <p>Floki</p>
+                        <p>Floki Vilgerðarson é um construtor de barcos e malandro incorrigível, que também é o excêntrico e amigo mais próximo de Ragnar Lothbrok . Ele é marido de Helga , e eles têm uma filha chamada Angrboda.</p>
+                    </div>
+                </div>
+
+                <div class="container__burger">
+                    <div class="img__burger">
+                        <img src="./assets/images/cardapio/burguers/freya.jpg">
+                    </div>
+                    <div class="content__burger">
+                        <p>Freya</p>
+                        <p>Freya, uma das figuras mais veneradas na mitologia nórdica, é uma das divindades determinantes da integração entre os Vanir e os Aesir. Era a deusa do amor, da beleza, da fertilidade e da magia Seidr, que manejava os poderes de conhecer e dominar o destino, era uma das deusas mais cultuadas pelos nórdicos da Era Viking</p>
+                    </div>
+                </div>
+
+                <div class="container__burger">
+                    <div class="img__burger">
+                        <img src="./assets/images/cardapio/burguers/gyda.jpg">
+                    </div>
+                    <div class="content__burger">
+                        <p>Gyda</p>
+                        <p>Gyda Ragnarsdottir é filha de Ragnar Lothbrok e Lagertha, Gyda é uma menina de onze anos que mora em uma pequena fazenda em um vilarejo nos arredores de Kattegat com seu pai Ragnar, sua mãe Lagertha e seu irmão de doze anos, Björn.</p>
+                    </div>
+                </div>
+
+                <div class="container__burger">
+                    <div class="img__burger">
+                        <img src="./assets/images/cardapio/burguers/gyda.jpg">
+                    </div>
+                    <div class="content__burger">
+                        <p>Hvitserk</p>
+                        <p>Hvitserk ( Hvítserkr , &quot;Camisa Branca&quot;) foi um dos filhos do lendário viking Ragnar Lodbrok do século IX e sua esposa Aslaug. </p>
+                    </div>
+                </div>
+
+                <div class="container__burger">
+                    <div class="img__burger">
+                        <img src="./assets/images/cardapio/burguers/ivar.jpg">
+                    </div>
+                    <div class="content__burger">
+                        <p>Ivar</p>
+                        <p>Ivar Ragnarsson , também conhecido como Ivar &quot;o Desossado&quot;, é o filho mais novo de Ragnar Lothbrok e Aslaug. Concebido após o retorno de seu pai da Inglaterra , Aslaug vinha alertando Ragnar sobre o que estava por vir. Aslaug avisou que eles não deveriam ter intimidade, sabendo de uma profecia que ameaçava a saúde da futura criança, mas Ragnar insistiu. Como Ragnar não deu ouvidos aos seus avisos, Ivar nasceu com ossos fracos, pernas torcidas e aparentemente quebradas, daí o apelido de &quot;Desossado&quot;.</p>
+                    </div>
+                </div>
+
+                <div class="container__burger">
+                    <div class="img__burger">
+                        <img src="./assets/images/cardapio/burguers/judith.jpg">
+                    </div>
+                    <div class="content__burger">
+                        <p>Judith</p>
+                        <p>Judite da Nortúmbria é filha do rei Ælle da Nortúmbria e da rainha Ealhswith , e esposa do príncipe Æthelwulf de Wessex . Quando ele se torna rei, ela se torna Rainha Consorte.</p>
+                    </div>
+                </div>
+
+                <div class="container__burger">
+                    <div class="img__burger">
+                        <img src="./assets/images/cardapio/burguers/largheta.jpg">
+                    </div>
+                    <div class="content__burger">
+                        <p>Lagertha</p>
+                        <p>Lagertha é a primeira e ex-esposa de Ragnar Lothbrok e ex-rainha de Kattegat . Ela é a mãe de Björn . Lagertha é um conde e uma feroz donzela escudeira .</p>
+                    </div>
+                </div>
+
+                <div class="container__burger">
+                    <div class="img__burger">
+                        <img src="./assets/images/cardapio/burguers/loki.jpg">
+                    </div>
+                    <div class="content__burger">
+                        <p>Loki</p>
+                        <p>Loki  (pronuncia-se LOAK-ee) é um  Jötunn  e o deus nórdico da travessura e do engano. Loki é filho dos Gigantes Farbauti e Laufey, ele também tem dois irmãos Helblinde e Býleistr. Loki é conhecido como o Deus malandro, ele não é mau, nem bom, ele morava em  Asgard  mesmo sendo de Jotunheim (a terra dos gigantes). Ele adorava criar problemas para qualquer pessoa, especialmente para os deuses e deusas de Asgard. Loki era astuto e inteligente e sempre apresentava novas ideias para irritar e deixar as pessoas ao máximo constrangimento.</p>
+                    </div>
+                </div>
+
+                <div class="container__burger">
+                    <div class="img__burger">
+                        <img src="./assets/images/cardapio/burguers/odin.jpg">
+                    </div>
+                    <div class="content__burger">
+                        <p>Odin</p>
+                        <p>Odin (nórdico antigo: Óðinn; que significa &quot;frenético&quot;; pronunciado OH-din) é o deus da sabedoria, da guerra e da magia. Ele é o principal deus Viking e é conhecido como Allfather . Ele governa como o Rei dos Æsir em Asgard .</p>
+                    </div>
+                </div>
+
+                <div class="container__burger">
+                    <div class="img__burger">
+                        <img src="./assets/images/cardapio/burguers/ragnar.jpg">
+                    </div>
+                    <div class="content__burger">
+                        <p>Ragnar</p>
+                        <p>Ragnar &quot;Lothbrok&quot; ​​Sigurdsson (nórdico antigo: Ragnarr Loðbrók , Ragnar significa &quot;guardião do forte&quot; e Lothbrok significa &quot;calças felpudas&quot;) é um fazendeiro e guerreiro viking que anseia por atacar as supostas riquezas da Inglaterra desconhecida . Sua primeira esposa é Lagertha , e eles têm dois filhos chamados Gyda e Bjorn . Sua segunda esposa é Aslaug , e eles têm quatro filhos chamados Ubbe , Hvitserk , Sigurd e Ivar . Ragnar é o irmão mais novo de Rollo . Ele se torna Rei de Kattegat .</p>
+                    </div>
+                </div>
+
+                <div class="container__burger">
+                    <div class="img__burger">
+                        <img src="./assets/images/cardapio/burguers/rei-ecbert.jpg">
+                    </div>
+                    <div class="content__burger">
+                        <p>Rei Ecbert</p>
+                        <p>Egberto foi uma figura de extrema importância na história dos vikings. Ele era conhecido por sua liderança forte e habilidade estratégica, o que o tornou um dos mais respeitados líderes vikings de sua época. Sua biografia é repleta de conquistas e feitos que marcaram sua presença na história.</p>
+                    </div>
+                </div>
+
+                <div class="container__burger">
+                    <div class="img__burger">
+                        <img src="./assets/images/cardapio/burguers/rei-harald.jpg">
+                    </div>
+                    <div class="content__burger">
+                        <p>Rei Harald</p>
+                        <p>Haroldo I da Noruega, também dito Haroldo Cabelo Belo(em nórdico antigo: Haraldr Hárfagri; em noruguês moderno: Harald Hårfagre; c. 850 – 943) foi o fundador e o primeiro rei da Noruega. Reinou entre 872 e 930. Foi o fundador da dinastia Hårfagreætta e o viking que uniu a Noruega. </p>
+                    </div>
+                </div>
+
+                <div class="container__burger">
+                    <div class="img__burger">
+                        <img src="./assets/images/cardapio/burguers/rollo.jpg">
+                    </div>
+                    <div class="content__burger">
+                        <p>Rollo</p>
+                        <p>Rollo da Normandia, originalmente conhecido como Rollo Sigurdsson, é o irmão mais velho de Ragnar Lothbrok e duque da Normandia . Ele é marido da princesa franca Gisla e pai de Guilherme , Marcelo e Celsa . Antes de seu casamento, Rollo era conhecido como um temível guerreiro viking , com uma veia impulsiva e cheio de lutas internas.</p> 
+                    </div>
+                </div>
+
+                <div class="container__burger">
+                    <div class="img__burger">
+                        <img src="./assets/images/cardapio/burguers/sigurd.jpg">
+                    </div>
+                    <div class="content__burger">
+                        <p>Sigurd</p>
+                        <p>Sigurd Ragnarsson , também conhecido como  Sigurd &quot;Cobra no Olho&quot;,  é o terceiro filho de Ragnar e Aslaug.</p>
+                    </div>
+                </div>
+
+                <div class="container__burger">
+                    <div class="img__burger">
+                        <img src="./assets/images/cardapio/burguers/thor.jpg">
+                    </div>
+                    <div class="content__burger">
+                        <p>Thor</p>
+                        <p>Thor era o deus do trovão, do céu, da tempestade e da agricultura. Era o deus mais popular da religiosidade nórdica. Usava três acessórios importantes: um martelo, um cinto e luvas de ferro. Era filho de Odin e conhecido como guardião de Midgard.</p>
+                    </div>
+                </div>
+
+                <div class="container__burger">
+                    <div class="img__burger">
+                        <img src="./assets/images/cardapio/burguers/torvi.jpg">
+                    </div>
+                    <div class="content__burger">
+                        <p>Torvi</p>
+                        <p>Torvi é uma Dama do Escudo, uma princesa e a ex-segunda esposa de Earl Borg. Após a morte de Earl Borg, por Ragnar, e o nascimento de seu filho Guthrum, Torvi se casa com Erlendur. Alguns anos depois, Torvi mata Erlendur e vai morar em Kattegat com seu amante e agora terceiro marido, Bjorn Ironside.</p>
+                    </div>
+                </div>
+
+                <div class="container__burger">
+                    <div class="img__burger">
+                        <img src="./assets/images/cardapio/burguers/ubbe.jpg">
+                    </div>
+                    <div class="content__burger">
+                        <p>Ubbe</p>
+                        <p>Ubbe Ragnarsson é o primeiro filho de Ragnar Lothbrok e Aslaug . Ele é o segundo filho mais velho de Ragnar. Ele eventualmente se casa com Torvi .
+                        </p>
+                    </div>
+                </div>
+
+                <div class="container__burger">
+                    <div class="img__burger">
+                        <img src="./assets/images/cardapio/burguers/valkirias.jpg">
+                    </div>
+                    <div class="content__burger">
+                        <p>Valkirias</p>
+                    <p>As Valquírias compõem a mitologia dos povos nórdicos e germânicos que habitavam a região norte da Europa. Caracterizadas como virgens guerreiras que cavalgavam corcéis, elas estavam ligadas ao panteão de Odin, a principal divindade da religião politeísta professada por estes povos.</p>
+                    </div>
+                </div>
+
+                <div class="container__burger">
+                    <div class="img__burger">
+                        <img src="./assets/images/cardapio/burguers/vidente.jpg">
+                    </div>
+                    <div class="content__burger">
+                        <p>Vidente</p>
+                    <p>O vidente de Kattegat, Vidente é um termo nórdico antigo para alguém que praticou feitiçaria na Idade de Ferro da Escandinávia e que desempenhou um papel enorme na sociedade Viking daquele tempo, visto como tendo uma conexão direta com os deuses, uma conexão que muitas vezes é iludido e explorado na série. Normalmente, os Videntes eram feiticeiras do sexo feminino, embora a prática fosse realizada por homens de vez em quando. Os Vikings acreditavam que os homens deveriam ser guerreiros, por isso, é raro ver a figura de um Vidente como um ser masculino.</p>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <section class="reserva" id="reservas">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-one">
+
+                        <div class="card-secondary wow fadeInUp">
+
+                            <div class="row">
+
+                                <div class="col-12 col-lg-7 col-md-7 col-sm-12">
+                                    <span class="hint-title"><b>Reserva</b></span>
+                                    <h1 class="title">
+                                        <b>Quer reservar um horário?</b>
+                                    </h1>
+                                    <p class="pr-5">
+                                        Mande uma mensagem clicando no botão abaixo
+                                        <br>
+                                        Reserve sua data e horário de forma simples e rápida e venha saborear o verdadeiro hamburguer feito na brasa junto com seus amigos.
+                                    </p>
+                                    <a class="btn btn-yellow mt-4 wow fadeIn delay-05s" href="#" id="btnReserva" target="_blank">
+                                        Fazer reserva
+                                    </a>
+                                </div>
+
+                                <div class="col-5 no-mobile">
+                                    <div class="d-flex img-banner">
+                                        <img src="./assets/images/logo-header.png" />
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="video">
+                <video autoplay loop playsinline muted>			
+                    <source src="./video/fire.mp4" type='video/mp4'>
+                </video>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12 col-lg-3 col-md-3 col-sm-12 col-one container-logo-footer wow fadeIn">
+                        <img class="logo-footer" src="./assets/images/logo-footer.png" />
+                    </div>
+
+                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-one container-texto-footer wow fadeIn">
+                        <p class="mb-0">
+                            <b>&copy; Valhalla - Burger and Beer - 2024</b> - Todos os direitos reservados
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-lg-3 col-md-3 col-sm-12 col-one container-redes-footer wow fadeIn">
+                        <a class="btn btn-sm btn-white btn-social mr-3">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="btn btn-sm btn-white btn-social">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <div class="modal-full animated fadeIn hidden" id="modalCarrinho">
+
+            <div class="m-header">
+                <div class="container">
+                    <a class="btn btn-white btn-sm float-right" onclick="cardapio.metodos.abrirCarrinho(false)">
+                        Fechar
+                    </a>
+                    <div class="etapas">
+                        <div class="etapa etapa1 active">1</div>
+                        <div class="etapa etapa2">2</div>
+                        <div class="etapa etapa3">3</div>
+                    </div>
+                    <p class="title-carrinho mt-4">
+                        <b id="lblTituloEtapa">Seu carrinho:</b>
+                    </p>
+                </div>
+            </div>          
+
+            <div class="m-body">
+                
+
+                <div class="container">
+
+                    <div id="itensCarrinho" class="row mr-0 ml-0 animated fadeIn hidden">
+                            
+                    </div>
+
+                    <div id="localEntrega" class="row mr-0 ml-0 animated fadeIn hidden">
+
+                        <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+                            <div class="form-group container-cep">
+                                <label>CEP:</label>
+                                <input id="txtCEP" type="text" class="form-control" />
+                                <a class="btn btn-yellow btn-sm" id="buscaCEP" onclick="cardapio.metodos.buscarCep()">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-8 no-mobile"></div>
+
+                        <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label>Endereço:</label>
+                                <input id="txtEndereco" type="text" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+                            <div class="form-group">
+                                <label>Bairro:</label>
+                                <input id="txtBairro" type="text" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-2 col-md-2 col-sm-12">
+                            <div class="form-group">
+                                <label>Número:</label>
+                                <input id="txtNumero" type="text" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label>Cidade:</label>
+                                <input id="txtCidade" type="text" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+                            <div class="form-group">
+                                <label>Complemento:</label>
+                                <input id="txtComplemento" type="text" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-2 col-md-2 col-sm-12">
+                            <div class="form-group">
+                                <label>UF:</label>
+                                <select id="ddlUf" class="form-control">
+                                    <option value="-1">...</option>
+                                    <option value="AC">AC</option>
+                                    <option value="AL">AL</option>
+                                    <option value="AP">AP</option>
+                                    <option value="AM">AM</option>
+                                    <option value="BA">BA</option>
+                                    <option value="CE">CE</option>
+                                    <option value="DF">DF</option>
+                                    <option value="ES">ES</option>
+                                    <option value="GO">GO</option>
+                                    <option value="MA">MA</option>
+                                    <option value="MT">MT</option>
+                                    <option value="MS">MS</option>
+                                    <option value="MG">MG</option>
+                                    <option value="PA">PA</option>
+                                    <option value="PB">PB</option>
+                                    <option value="PR">PR</option>
+                                    <option value="PE">PE</option>
+                                    <option value="PI">PI</option>
+                                    <option value="RJ">RJ</option>
+                                    <option value="RN">RN</option>
+                                    <option value="RS">RS</option>
+                                    <option value="RO">RO</option>
+                                    <option value="RR">RR</option>
+                                    <option value="SC">SC</option>
+                                    <option value="SP">SP</option>
+                                    <option value="SE">SE</option>
+                                    <option value="TO">TO</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label>Forma de Pagamento:</label>
+                                <select id="ddlPagamento" class="form-control">
+                                    <option value="-1">...</option>
+                                    <option value="0">Dinheiro</option>
+                                    <option value="1">Cartão</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-4 col-md-4 col-sm-12 troco">
+                            <div class="form-group">
+                                <label>Troco para:</label>
+                                <input id="txtTroco" type="text" class="form-control" value="" />
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="form-group">
+                                <label>Observações:</label>
+                                <textarea id="txtObservacao" class="form-control resize" placeholder="Ponto da Carne dos Lanches, Mal Passada, Bem Passada..."></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="resumoCarrinho" class="row mr-0 ml-0 animated fadeIn hidden">
+                        <div class="col-12">
+                            <p class="title-carrinho mt-4">
+                                <b>Itens do pedido:</b>
+                            </p>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="row" id="listaItensResumo">
+
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <p class="title-carrinho mt-4">
+                                <b>Local da entrega:</b>
+                            </p>
+                        </div>
+
+                        <div class="col-12 item-carrinho resumo">
+                            <div class="img-map">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <div class="dados-produto">
+                                <p class="texto-endereco">
+                                    <b id="resumoEndereco"></b>
+                                </p>
+                                <p class="cidade-endereco" id="cidadeEndereco"></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="m-footer">
+                <div class="container">
+                    <div class="container-total text-right mb-4">
+                        <p class="mb-0">
+                            <span>Subtotal:</span>
+                            <span id="lblSubTotal">R$ 0,00</span>
+                        </p>
+                        <p class="mb-0 texto-entrega">
+                            <span><i class="fas fa-motorcycle"></i> Entrega:</span>
+                            <span id="lblValorEntrega">+ R$ 0,00</span>
+                        </p>
+                        <p class="mb-0 texto-total">
+                            <span><b>Total:</b></span>
+                            <span class="valor-total"><b id="lblValorTotal">R$ 0,00</b></span>
+                        </p>
+                    </div>
+
+                    <a onclick="cardapio.metodos.carregarEndereco()" class="btn btn-yellow float-right" id="btnEtapaPedido">
+                        Continuar
+                    </a>
+                    <a onclick="cardapio.metodos.resumoPedido()" class="btn btn-yellow float-right hidden" id="btnEtapaEndereco">
+                        Revisar pedido
+                    </a>
+                    <a href="#" class="btn btn-yellow float-right hidden" id="btnEtapaResumo" target="_blank">
+                        Enviar pedido
+                    </a>
+
+                    <a onclick="cardapio.metodos.voltarEtapa()" class="btn btn-white float-right mr-3 hidden" id="btnVoltar">
+                        Voltar
+                    </a>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <script type="text/javascript" src="./assets/scripts/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="./assets/scripts/modernizr-3.5.0.min.js"></script>
+        <script type="text/javascript" src="./assets/scripts/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./assets/scripts/popper.min.js"></script>
+        <script type="text/javascript" src="./assets/scripts/wow.min.js"></script>
+        <script type="text/javascript" src="./assets/scripts/dados.js"></script>
+        <script type="text/javascript" src="./assets/scripts/app.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js"></script>
+
+        <script>new WOW().init();</script>
+        <script>
+            $(document).ready(function(){
+                    $('#txtCEP').mask('00000-000');
+                    $('#txtTroco').mask('#.##0,00', {reverse: true});
+            });
+        </script>
+</body>
+
+</html>

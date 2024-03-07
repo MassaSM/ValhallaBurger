@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Valhalla - Burger and Beer</title>
+
+        <link rel="stylesheet" href="./assets/styles/bootstrap.min.css" />
+        <link rel="stylesheet" href="./assets/styles/fontawesome.css" />
+        <link rel="stylesheet" href="./assets/styles/animate.css" />
+        <link rel="stylesheet" href="./assets/styles/main.css" />
+        <link rel="stylesheet" href="./assets/styles/responsivo.css" />
+        <link rel="apple-touch-icon" sizes="57x57" href="./assets/images/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./assets/images/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./assets/images/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./assets/images/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./assets/images/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./assets/images/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./assets/images/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./assets/images/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+        <link rel="manifest" href="./assets/images/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="./assets/images/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+
+    <body>
+
+        <div class="container-mensagens" id="container-mensagens">
+
+        </div>
+
+        <a class="botao-carrinho animated bounceIn hidden" onclick="cardapio.metodos.abrirCarrinho(true)">
+            <div class="badge-total-carrinho">0</div>
+            <i class="fa fa-shopping-bag"></i>
+        </a>
+
+        <section class="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg pl-0 pr-0 col-one">
+                    <a class="navbar-brand wow fadeIn" href="index.html">
+                        <img src="./assets/images/logo-header.png" width="160" class="img-logo" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+                        <span class="navbar-toggler-icon">
+                            <i class="fas fa-bars"></i>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto mr-auto wow fadeIn">
+                            <li class="nav-item">
+                                <a href="index.html#reservas" class="nav-link"><b>Reservas</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="index.html#servicos" class="nav-link"><b>Serviços</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="index.html#cardapio" class="nav-link"><b>Cardápio</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="historia.html" class="nav-link"><b>História</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="galeria.html" class="nav-link"><b>Galeria</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="index.html#depoimentos" class="nav-link"><b>Depoimentos</b></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+        <section class="history">
+            <div class="video">
+                <video autoplay loop playsinline muted>			
+                    <source src="./video/tempestade.mp4" type='video/mp4'>
+                </video>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content__historia">
+                            <div class="title__intern">
+                                <h1>Galeria de Fotos</h1>
+                            </div>
+                            <div class="img__historia">
+                                <img src="./assets/images/viking-historia.webp">
+                            </div>                            
+                        </div>
+                        
+
+                        <div class="gallery">
+                            <figure class="gallery__item gallery__item--1">
+                                <a href="/assets/images/viking-01.jpg" data-download-src="/assets/images/viking-01.jpg" data-fancybox><img src="/assets/images/viking-01.jpg" class="gallery__img" alt="Image 1"></a>
+                            </figure>
+
+                            <figure class="gallery__item gallery__item--2">
+                                <a href="/assets/images/viking-02.jpg" data-download-src="/assets/images/viking-02.jpg"  data-fancybox><img src="/assets/images/viking-02.jpg" class="gallery__img" alt="Image 2"></a>
+                            </figure>
+
+                            <figure class="gallery__item gallery__item--3">
+                                <a href="/assets/images/viking-03.jpg" data-download-src="/assets/images/viking-03.jpg"  data-fancybox><img src="/assets/images/viking-03.jpg" class="gallery__img" alt="Image 3"></a>
+                            </figure>
+
+                            <figure class="gallery__item gallery__item--4">
+                                <a href="/assets/images/viking-04.jpg" data-download-src="/assets/images/viking-04.jpg"  data-fancybox><img src="/assets/images/viking-04.jpg" class="gallery__img" alt="Image 4"></a>
+                            </figure>
+
+                            <figure class="gallery__item gallery__item--1">
+                                <a href="/assets/images/viking-01.jpg" data-download-src="/assets/images/viking-01.jpg" data-fancybox><img src="/assets/images/viking-01.jpg" class="gallery__img" alt="Image 1"></a>
+                            </figure>
+
+                            <figure class="gallery__item gallery__item--2">
+                                <a href="/assets/images/viking-02.jpg" data-download-src="/assets/images/viking-02.jpg"  data-fancybox><img src="/assets/images/viking-02.jpg" class="gallery__img" alt="Image 2"></a>
+                            </figure>
+
+                            <figure class="gallery__item gallery__item--3">
+                                <a href="/assets/images/viking-03.jpg" data-download-src="/assets/images/viking-03.jpg"  data-fancybox><img src="/assets/images/viking-03.jpg" class="gallery__img" alt="Image 3"></a>
+                            </figure>
+
+                            <figure class="gallery__item gallery__item--4">
+                                <a href="/assets/images/viking-04.jpg" data-download-src="/assets/images/viking-04.jpg"  data-fancybox><img src="/assets/images/viking-04.jpg" class="gallery__img" alt="Image 4"></a>
+                            </figure>
+
+                            <figure class="gallery__item gallery__item--1">
+                                <a href="/assets/images/viking-01.jpg" data-download-src="/assets/images/viking-01.jpg" data-fancybox><img src="/assets/images/viking-01.jpg" class="gallery__img" alt="Image 1"></a>
+                            </figure>
+
+                            <figure class="gallery__item gallery__item--2">
+                                <a href="/assets/images/viking-02.jpg" data-download-src="/assets/images/viking-02.jpg"  data-fancybox><img src="/assets/images/viking-02.jpg" class="gallery__img" alt="Image 2"></a>
+                            </figure>
+
+                            <figure class="gallery__item gallery__item--3">
+                                <a href="/assets/images/viking-03.jpg" data-download-src="/assets/images/viking-03.jpg"  data-fancybox><img src="/assets/images/viking-03.jpg" class="gallery__img" alt="Image 3"></a>
+                            </figure>
+
+                            <figure class="gallery__item gallery__item--4">
+                                <a href="/assets/images/viking-04.jpg" data-download-src="/assets/images/viking-04.jpg"  data-fancybox><img src="/assets/images/viking-04.jpg" class="gallery__img" alt="Image 4"></a>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+           
+        </section>
+
+
+        <section class="reserva" id="reservas">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-one">
+
+                        <div class="card-secondary wow fadeInUp">
+
+                            <div class="row">
+
+                                <div class="col-12 col-lg-7 col-md-7 col-sm-12">
+                                    <span class="hint-title"><b>Reserva</b></span>
+                                    <h1 class="title">
+                                        <b>Quer reservar um horário?</b>
+                                    </h1>
+                                    <p class="pr-5">
+                                        Mande uma mensagem clicando no botão abaixo
+                                        <br>
+                                        Reserve sua data e horário de forma simples e rápida e venha saborear o verdadeiro hamburguer feito na brasa junto com seus amigos.
+                                    </p>
+                                    <a class="btn btn-yellow mt-4 wow fadeIn delay-05s" href="#" id="btnReserva" target="_blank">
+                                        Fazer reserva
+                                    </a>
+                                </div>
+
+                                <div class="col-5 no-mobile">
+                                    <div class="d-flex img-banner">
+                                        <img src="./assets/images/logo-header.png" />
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="video">
+                <video autoplay loop playsinline muted>			
+                    <source src="./video/fire.mp4" type='video/mp4'>
+                </video>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12 col-lg-3 col-md-3 col-sm-12 col-one container-logo-footer wow fadeIn">
+                        <img class="logo-footer" src="./assets/images/logo-footer.png" />
+                    </div>
+
+                    <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-one container-texto-footer wow fadeIn">
+                        <p class="mb-0">
+                            <b>&copy; Valhalla - Burger and Beer - 2024</b> - Todos os direitos reservados
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-lg-3 col-md-3 col-sm-12 col-one container-redes-footer wow fadeIn">
+                        <a class="btn btn-sm btn-white btn-social mr-3">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="btn btn-sm btn-white btn-social">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <div class="modal-full animated fadeIn hidden" id="modalCarrinho">
+
+            <div class="m-header">
+                <div class="container">
+                    <a class="btn btn-white btn-sm float-right" onclick="cardapio.metodos.abrirCarrinho(false)">
+                        Fechar
+                    </a>
+                    <div class="etapas">
+                        <div class="etapa etapa1 active">1</div>
+                        <div class="etapa etapa2">2</div>
+                        <div class="etapa etapa3">3</div>
+                    </div>
+                    <p class="title-carrinho mt-4">
+                        <b id="lblTituloEtapa">Seu carrinho:</b>
+                    </p>
+                </div>
+            </div>          
+
+            <div class="m-body">
+                
+
+                <div class="container">
+
+                    <div id="itensCarrinho" class="row mr-0 ml-0 animated fadeIn hidden">
+                            
+                    </div>
+
+                    <div id="localEntrega" class="row mr-0 ml-0 animated fadeIn hidden">
+
+                        <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+                            <div class="form-group container-cep">
+                                <label>CEP:</label>
+                                <input id="txtCEP" type="text" class="form-control" />
+                                <a class="btn btn-yellow btn-sm" id="buscaCEP" onclick="cardapio.metodos.buscarCep()">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-8 no-mobile"></div>
+
+                        <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label>Endereço:</label>
+                                <input id="txtEndereco" type="text" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+                            <div class="form-group">
+                                <label>Bairro:</label>
+                                <input id="txtBairro" type="text" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-2 col-md-2 col-sm-12">
+                            <div class="form-group">
+                                <label>Número:</label>
+                                <input id="txtNumero" type="text" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label>Cidade:</label>
+                                <input id="txtCidade" type="text" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+                            <div class="form-group">
+                                <label>Complemento:</label>
+                                <input id="txtComplemento" type="text" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-2 col-md-2 col-sm-12">
+                            <div class="form-group">
+                                <label>UF:</label>
+                                <select id="ddlUf" class="form-control">
+                                    <option value="-1">...</option>
+                                    <option value="AC">AC</option>
+                                    <option value="AL">AL</option>
+                                    <option value="AP">AP</option>
+                                    <option value="AM">AM</option>
+                                    <option value="BA">BA</option>
+                                    <option value="CE">CE</option>
+                                    <option value="DF">DF</option>
+                                    <option value="ES">ES</option>
+                                    <option value="GO">GO</option>
+                                    <option value="MA">MA</option>
+                                    <option value="MT">MT</option>
+                                    <option value="MS">MS</option>
+                                    <option value="MG">MG</option>
+                                    <option value="PA">PA</option>
+                                    <option value="PB">PB</option>
+                                    <option value="PR">PR</option>
+                                    <option value="PE">PE</option>
+                                    <option value="PI">PI</option>
+                                    <option value="RJ">RJ</option>
+                                    <option value="RN">RN</option>
+                                    <option value="RS">RS</option>
+                                    <option value="RO">RO</option>
+                                    <option value="RR">RR</option>
+                                    <option value="SC">SC</option>
+                                    <option value="SP">SP</option>
+                                    <option value="SE">SE</option>
+                                    <option value="TO">TO</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label>Forma de Pagamento:</label>
+                                <select id="ddlPagamento" class="form-control">
+                                    <option value="-1">...</option>
+                                    <option value="0">Dinheiro</option>
+                                    <option value="1">Cartão</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-4 col-md-4 col-sm-12 troco">
+                            <div class="form-group">
+                                <label>Troco para:</label>
+                                <input id="txtTroco" type="text" class="form-control" value="" />
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="form-group">
+                                <label>Observações:</label>
+                                <textarea id="txtObservacao" class="form-control resize" placeholder="Ponto da Carne dos Lanches, Mal Passada, Bem Passada..."></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="resumoCarrinho" class="row mr-0 ml-0 animated fadeIn hidden">
+                        <div class="col-12">
+                            <p class="title-carrinho mt-4">
+                                <b>Itens do pedido:</b>
+                            </p>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="row" id="listaItensResumo">
+
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <p class="title-carrinho mt-4">
+                                <b>Local da entrega:</b>
+                            </p>
+                        </div>
+
+                        <div class="col-12 item-carrinho resumo">
+                            <div class="img-map">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <div class="dados-produto">
+                                <p class="texto-endereco">
+                                    <b id="resumoEndereco"></b>
+                                </p>
+                                <p class="cidade-endereco" id="cidadeEndereco"></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="m-footer">
+                <div class="container">
+                    <div class="container-total text-right mb-4">
+                        <p class="mb-0">
+                            <span>Subtotal:</span>
+                            <span id="lblSubTotal">R$ 0,00</span>
+                        </p>
+                        <p class="mb-0 texto-entrega">
+                            <span><i class="fas fa-motorcycle"></i> Entrega:</span>
+                            <span id="lblValorEntrega">+ R$ 0,00</span>
+                        </p>
+                        <p class="mb-0 texto-total">
+                            <span><b>Total:</b></span>
+                            <span class="valor-total"><b id="lblValorTotal">R$ 0,00</b></span>
+                        </p>
+                    </div>
+
+                    <a onclick="cardapio.metodos.carregarEndereco()" class="btn btn-yellow float-right" id="btnEtapaPedido">
+                        Continuar
+                    </a>
+                    <a onclick="cardapio.metodos.resumoPedido()" class="btn btn-yellow float-right hidden" id="btnEtapaEndereco">
+                        Revisar pedido
+                    </a>
+                    <a href="#" class="btn btn-yellow float-right hidden" id="btnEtapaResumo" target="_blank">
+                        Enviar pedido
+                    </a>
+
+                    <a onclick="cardapio.metodos.voltarEtapa()" class="btn btn-white float-right mr-3 hidden" id="btnVoltar">
+                        Voltar
+                    </a>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <script type="text/javascript" src="./assets/scripts/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="./assets/scripts/modernizr-3.5.0.min.js"></script>
+        <script type="text/javascript" src="./assets/scripts/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./assets/scripts/popper.min.js"></script>
+        <script type="text/javascript" src="./assets/scripts/wow.min.js"></script>
+        <script type="text/javascript" src="./assets/scripts/dados.js"></script>
+        <script type="text/javascript" src="./assets/scripts/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+        <script>new WOW().init();</script>
+        <script>
+            $(document).ready(function(){
+                    $('#txtCEP').mask('00000-000');
+                    $('#txtTroco').mask('#.##0,00', {reverse: true});
+            });
+        </script>
+        <script>            
+            Fancybox.bind('[data-fancybox]', {                
+                Toolbar: {
+                    display: {
+                        left: [],
+                        middle: [],
+                        right: [
+                        "download",
+                        "close",
+                        ],
+                    }
+                }
+            });    
+        </script>
+</body>
+
+</html>
