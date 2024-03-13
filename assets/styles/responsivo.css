@@ -27,7 +27,7 @@
     }
 
     .navbar-toggler-icon {
-        padding-top: 5px;
+        padding-top: 0px;
     }
 
     .navbar-collapse {
@@ -167,6 +167,7 @@
     .modal-full .item-carrinho {
         padding-left: 0;
         padding-right: 0;
+        flex-direction: column;
     }
 
     .modal-full .img-produto {
@@ -175,7 +176,8 @@
     }
 
     .modal-full .img-produto img {
-        width: 50px;
+        width: 100%;
+        margin-bottom: 16px;
     }
 
     .modal-full .dados-produto {
@@ -186,6 +188,11 @@
 
     .modal-full .title-produto, .modal-full .price-produto {
         font-size: 16px!important;
+        text-align: center!important;
+    }
+
+    .modal-full .dados-produto p{
+        text-align: center;
     }
 
     .modal-full .add-numero-itens {
@@ -195,10 +202,24 @@
     .modal-full .form-control {
         font-size: 16px;
     }
+    .modal-full #localEntrega .col-12,
+    .modal-full #localEntrega .col-lg-12,
+    .modal-full #localEntrega .col-md-12,
+    .modal-full #localEntrega .col-sm-12{
+        padding: 0;
+    }
     video{
         width: 100vw;
     }
     .pr-5, .px-5{
         padding-right: 0!important;
+    }
+    .container-cep .btn{
+        right: 3px;
+        top: 36px;
+    }
+
+    .title-carrinho{
+        text-align: center;
     }
 }

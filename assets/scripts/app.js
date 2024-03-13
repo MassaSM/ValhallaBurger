@@ -12,7 +12,11 @@ var VALOR_CARRINHO = 0;
 var VALOR_ENTREGA = 0;
 var VALOR_ENTREGA_MINIMO = 5;
 
-var CELULAR_EMPRESA = '5524988254644';
+// var CELULAR_EMPRESA = '5524988254644';
+
+var CELULAR_EMPRESA = '5524998627049';
+
+
 
 cardapio.eventos = {
 
@@ -377,23 +381,22 @@ cardapio.metodos = {
 
                         VALOR_ENTREGA = 0 // zerando valor entrega a cada clique
 
-						if(dados.bairro === 'Centro' ) {VALOR_ENTREGA += 2;} 
+						if(dados.bairro === 'Centro' ) {VALOR_ENTREGA += 0;} 
 						else if(dados.bairro === '9 de Abril' ) {VALOR_ENTREGA += 15;} 
 						else if(dados.bairro === 'Abelhas' ) {VALOR_ENTREGA += 5;} 
 						else if(dados.bairro === 'Água Cumprida' ) {VALOR_ENTREGA += 8;} 
 						else if(dados.bairro === 'Ano Bom' ) {VALOR_ENTREGA += 6;} 
 						else if(dados.bairro === 'Apóstolo Paulo' ) {VALOR_ENTREGA += 8;} 
-						else if(dados.bairro === 'Boa Sorte' ) {VALOR_ENTREGA += 8;} 
+						else if(dados.bairro === 'Boa Sorte' ) {VALOR_ENTREGA += 7;} 
 						else if(dados.bairro === 'Boa Vista' ) {VALOR_ENTREGA += 15;} 
 						else if(dados.bairro === 'Boa Vista I' ) {VALOR_ENTREGA += 15;} 
 						else if(dados.bairro === 'Boa Vista II' ) {VALOR_ENTREGA += 15;} 
-						else if(dados.bairro === 'Bocaininha' ) {VALOR_ENTREGA += 8;} 
+						else if(dados.bairro === 'Bocaininha' ) {VALOR_ENTREGA += 7;} 
 						else if(dados.bairro === 'Bom Pastor' ) {VALOR_ENTREGA += 6;} 
-						else if(dados.bairro === 'Centro' ) {VALOR_ENTREGA += '5';} 
 						else if(dados.bairro === 'Colonia' ) {VALOR_ENTREGA += 8;} 
 						else if(dados.bairro === 'Cotiaria' ) {VALOR_ENTREGA += 6;} 
-						else if(dados.bairro === 'Estamparia' ) {VALOR_ENTREGA += 6;} 
-						else if(dados.bairro === 'Getúlio Vargas' ) {VALOR_ENTREGA += 3;} 
+						else if(dados.bairro === 'Estamparia' ) {VALOR_ENTREGA += 5;} 
+						else if(dados.bairro === 'Getúlio Vargas' ) {VALOR_ENTREGA += 8;} 
 						else if(dados.bairro === 'Goiabal' ) {VALOR_ENTREGA += 8;} 
 						else if(dados.bairro === 'Jardim América' ) {VALOR_ENTREGA += 7;} 
 						else if(dados.bairro === 'Jardim Boa Vista' ) {VALOR_ENTREGA += 6;} 
@@ -403,26 +406,26 @@ cardapio.metodos = {
 						else if(dados.bairro === 'Loteamento Belo Horizonte' ) {VALOR_ENTREGA += 8;} 
 						else if(dados.bairro === 'Loteamento Chinês' ) {VALOR_ENTREGA += 8;} 
 						else if(dados.bairro === 'Loteamento São Vicente' ) {VALOR_ENTREGA += 8;} 
-						else if(dados.bairro === 'Loteamento Sofia' ) {VALOR_ENTREGA += 9;} 
-						else if(dados.bairro === 'Monte cristo' ) {VALOR_ENTREGA += 7;} 
+						else if(dados.bairro === 'Loteamento Sofia' ) {VALOR_ENTREGA += 8;} 
+						else if(dados.bairro === 'Monte cristo' ) {VALOR_ENTREGA += 6;} 
 						else if(dados.bairro === 'Morada Da Colonia I' ) {VALOR_ENTREGA += 8;} 
 						else if(dados.bairro === 'Morada Verde' ) {VALOR_ENTREGA += 8;} 
-						else if(dados.bairro === 'Nossa Senhora De Fátima' ) {VALOR_ENTREGA += 9;} 
+						else if(dados.bairro === 'Nossa Senhora de Fátima' ) {VALOR_ENTREGA += 6;} 
 						else if(dados.bairro === 'Nova Esperança' ) {VALOR_ENTREGA += 8;} 
 						else if(dados.bairro === 'Parque Independência' ) {VALOR_ENTREGA += 7;} 
-						else if(dados.bairro === 'Piteiras' ) {VALOR_ENTREGA += 8;} 
-						else if(dados.bairro === 'Roberto Silvera' ) {VALOR_ENTREGA += 6;} 
+						else if(dados.bairro === 'Piteiras' ) {VALOR_ENTREGA += 7;} 
+						else if(dados.bairro === 'Roberto Silvera' ) {VALOR_ENTREGA += 5;} 
 						else if(dados.bairro === 'Roselândia' ) {VALOR_ENTREGA += 8;} 
 						else if(dados.bairro === 'Santa Clara' ) {VALOR_ENTREGA += 8;} 
 						else if(dados.bairro === 'Santa Izabel' ) {VALOR_ENTREGA += 8;} 
-						else if(dados.bairro === 'Santa Lucia' ) {VALOR_ENTREGA += 9;} 
-						else if(dados.bairro === 'Santa Maria II' ) {VALOR_ENTREGA += 9;} 
-						else if(dados.bairro === 'Santa Rosa' ) {VALOR_ENTREGA += 7;} 
-						else if(dados.bairro === 'São Francisco De Assis' ) {VALOR_ENTREGA += 8;} 
-						else if(dados.bairro === 'são judas tadeu' ) {VALOR_ENTREGA += 9;} 
+						else if(dados.bairro === 'Santa Lucia' ) {VALOR_ENTREGA += 8;} 
+						else if(dados.bairro === 'Santa Maria II' ) {VALOR_ENTREGA += 8;} 
+						else if(dados.bairro === 'Santa Rosa' ) {VALOR_ENTREGA += 6;} 
+						else if(dados.bairro === 'São Francisco De Assis' ) {VALOR_ENTREGA += 7;} 
+						else if(dados.bairro === 'são judas tadeu' ) {VALOR_ENTREGA += 10;} 
 						else if(dados.bairro === 'São Luís' ) {VALOR_ENTREGA += 8;} 
 						else if(dados.bairro === 'São Luiz' ) {VALOR_ENTREGA += 8;} 
-						else if(dados.bairro === 'São Pedro' ) {VALOR_ENTREGA += 9;} 
+						else if(dados.bairro === 'São Pedro' ) {VALOR_ENTREGA += 8;} 
 						else if(dados.bairro === 'São Sebastião' ) {VALOR_ENTREGA += 8;} 
 						else if(dados.bairro === 'São Silvestre' ) {VALOR_ENTREGA += 6;} 
 						else if(dados.bairro === 'Saudade' ) {VALOR_ENTREGA += 6;} 

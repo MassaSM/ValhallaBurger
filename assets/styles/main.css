@@ -1047,6 +1047,10 @@ section.header {
     line-height: 1.9rem!important;
 }
 
+textarea#txtObservacao {
+    height: 100px;
+}
+
 
 @media only screen and (max-width: 640px){
     .gallery {
