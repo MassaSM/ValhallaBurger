@@ -222,4 +222,11 @@
     .title-carrinho{
         text-align: center;
     }
+    .img-produto-resumo img{
+        width: 100%;
+    }
+    a#btnEtapaEndereco,
+    a#btnEtapaResumo {
+        margin-bottom: 16px;
+    }
 }

@@ -448,10 +448,10 @@
 
                     <div id="localEntrega" class="row mr-0 ml-0 animated fadeIn hidden">
 
-                        <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+                        <div class="col-12 col-lg-4 col-md-4 col-sm-12" id="BuscaCep">
                             <div class="form-group container-cep">
                                 <label>CEP:</label>
-                                <input id="txtCEP" type="text" class="form-control" />
+                                <input id="txtCEP" type="text" class="form-control"  />
                                 <a class="btn btn-yellow btn-sm" id="buscaCEP" onclick="cardapio.metodos.buscarCep()">
                                     <i class="fa fa-search"></i>
                                 </a>
@@ -560,7 +560,7 @@
 
                     <div id="resumoCarrinho" class="row mr-0 ml-0 animated fadeIn hidden">
                         <div class="col-12">
-                            <p class="title-carrinho mt-4">
+                            <p class="title-carrinho mt-4" id="itensPedido">
                                 <b>Itens do pedido:</b>
                             </p>
                         </div>
@@ -646,6 +646,15 @@
                     $('#txtCEP').mask('00000-000');
                     $('#txtTroco').mask('#.##0,00', {reverse: true});
             });
+
+            $("#btnEtapaPedido").on( "click", function() {
+                $("#txtCEP").trigger( "focus" );
+            });
+            
+            $("a#btnEtapaResumo").on( "click", function() {
+                $(window).scrollTop($('#itensPedido').offset().top);
+            });
+            
         </script>
 </body>
 

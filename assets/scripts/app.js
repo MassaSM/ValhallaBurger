@@ -740,7 +740,6 @@ cardapio.templates = {
     `
 
 }
-
 jQuery('.nav-link.scroll,.ver-cardapio').on('click', function(e){
     e.preventDefault();
     var href = $(this).attr('href');
@@ -748,7 +747,6 @@ jQuery('.nav-link.scroll,.ver-cardapio').on('click', function(e){
         scrollTop:$(href).offset().top
     },'slow');
 });
-
 
 $(document).ready(function() {
     $('#ddlPagamento').change(function() {
